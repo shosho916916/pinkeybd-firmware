@@ -27,10 +27,10 @@
 
         default_layer {
             bindings = <
-&kp FSLH    &kp COMMA         &kp U      &kp MINUS     &kp SEMI  &kp ESC         &kp L      &kp R             &kp D  &kp Y  &kp P
-&kp E       &kp I             &kp A      &kp O         &kp U     &kp SCROLLLOCK  &kp G      &kp N             &kp T  &kp S  &kp K
-&kp X       &kp C             &kp V      &kp W         &kp Q     &kp TAB         &kp J      &kp H             &kp M  &kp B  &kp Z
-&kp LSHIFT  &lt 1 LANGUAGE_1  &kp SPACE  &kp LEFT_WIN  &kp F     &kp RSHIFT      &kp ENTER  &lt 3 LANGUAGE_2  &mo 2
+&kp Q    &kp L      &kp U      &kp COMMA         &kp DOT    &kp ESC         &kp F          &kp W      &kp R       &kp Y  &kp P
+&kp E    &kp I      &kp A      &kp O             &kp MINUS  &kp SCROLLLOCK  &kp K          &kp T      &kp N       &kp S  &kp H
+&kp Z    &kp X      &kp C      &kp V             &kp Q      &kp TAB         &kp G          &kp D      &kp M       &kp J  &kp B
+&kp TAB  &kp LSHFT  &kp SPACE  &kp LANG_HANGEUL  &kp F      &kp LANGUAGE_2  &kp BACKSPACE  &kp ENTER  &kp DELETE
             >;
 
             sensor-bindings = <&rot_kp PG_DN PG_UP>;
@@ -117,6 +117,15 @@
         };
 
         layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
