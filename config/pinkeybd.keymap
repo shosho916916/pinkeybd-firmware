@@ -128,10 +128,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &mkp MB2   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &to 0   &trans  &mkp MB1  &kp BACKSPACE  &kp ENTER  &trans
+&trans  &trans          &trans  &trans  &trans            &trans    &trans         &trans     &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans            &trans    &trans         &mkp MB2   &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &kp LEFT_CONTROL  &trans    &trans         &trans     &trans  &trans  &trans
+&trans  &kp LEFT_SHIFT  &trans  &to 0   &kp PRINTSCREEN   &mkp MB1  &kp BACKSPACE  &kp ENTER  &trans
             >;
         };
     };
