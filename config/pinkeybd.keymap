@@ -142,7 +142,7 @@
 &kp ESC  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 7 LEFT_GUI  &kp F             &mkp MB1      &kp BACKSPACE  &lt 2 ENTER  &kp DELETE
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_DOWN>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -159,6 +159,8 @@
 &none       &none           &none          &none             &kp UNDER     &kp LEFT_ALT  &kp DOT           &new_macro7  &new_macro8  &new_macro9  &kp KP_SUBTRACT
 &kp ESCAPE  &kp LEFT_SHIFT  &none          &lt 7 LEFT_GUI    &kp PSCRN     &mkp MB1      &kp BACKSPACE     &kp ENTER    &kp DEL
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_DOWN>;
         };
 
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -241,6 +243,8 @@
 &none       &none           &kp LEFT_SHIFT      &kp LEFT_CONTROL     &none            &none     &none               &none                &none       &none  &none
 &kp ESCAPE  &kp LEFT_SHIFT  &kp SPACE           &none                &kp PRINTSCREEN  &mkp MB1  &kp BACKSPACE       &kp ENTER            &kp DELETE
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
     };
 };
