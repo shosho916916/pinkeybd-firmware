@@ -102,7 +102,7 @@
             label = "NEW_MACRO0";
         };
 
-        new_macrocolonn: new_macro {
+        new_macrocolonn: new_macrocolonn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp COLON>;
