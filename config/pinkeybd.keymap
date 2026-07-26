@@ -121,6 +121,20 @@
             bindings = <&kp LANGUAGE_2 &kp TILDE>;
             label = "NEW_MACRONAMI";
         };
+
+        new_macro_marukakko: new_macro_marukakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_PARENTHESIS>;
+            label = "NEW_MACRO_MARUKAKKO";
+        };
+
+        new_macro_marukakko2: new_macro_marukakko2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_PARENTHESIS>;
+            label = "NEW_MACRO_MARUKAKKO2";
+        };
     };
 
     keymap {
@@ -171,10 +185,10 @@
 
         layer_2 {
             bindings = <
-&kp HASH     &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
-&kp DOLLAR   &kp APOSTROPHE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&key_repeat  &kp AT             &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_CONTROL  &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
-&kp ESCAPE   &kp LEFT_SHIFT     &kp SPACE         &kp LEFT_GUI       &kp PSCRN         &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
+&kp HASH     &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
+&kp DOLLAR   &kp APOSTROPHE     &new_macro_marukakko  &new_macro_marukakko2  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&key_repeat  &kp AT             &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_CONTROL  &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
+&kp ESCAPE   &kp LEFT_SHIFT     &kp SPACE             &kp LEFT_GUI           &kp PSCRN         &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
             >;
         };
 
