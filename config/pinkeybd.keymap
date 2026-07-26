@@ -31,6 +31,99 @@
         };
     };
 
+    macros {
+        new_macro1: new_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_1>;
+            label = "NEW_MACRO1";
+        };
+
+        new_macro2: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_2>;
+            label = "NEW_MACRO2";
+        };
+
+        new_macro3: new_macro3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_3>;
+            label = "NEW_MACRO3";
+        };
+
+        new_macro4: new_macro4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_4>;
+            label = "NEW_MACRO4";
+        };
+
+        new_macro5: new_macro5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_5>;
+            label = "NEW_MACRO5";
+        };
+
+        new_macro6: new_macro6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_6>;
+            label = "NEW_MACRO6";
+        };
+
+        new_macro7: new_macro7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_7>;
+            label = "NEW_MACRO7";
+        };
+
+        new_macro8: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_8>;
+            label = "NEW_MACRO";
+        };
+
+        new_macro9: new_macro9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_9>;
+            label = "NEW_MACRO9";
+        };
+
+        new_macro0: new_macro0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_NUMBER_0>;
+            label = "NEW_MACRO0";
+        };
+
+        new_macrocolonn: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp COLON>;
+            label = "NEW_MACRO";
+        };
+
+        new_macroslasy: new_macroslasy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp SLASH>;
+            label = "NEW_MACROSLASY";
+        };
+
+        new_macronami: new_macronami {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp TILDE>;
+            label = "NEW_MACRONAMI";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,10 +154,10 @@
 
         Lower_layer {
             bindings = <
-&kp FSLH    &kp COMMA  &kp END    &kp LEFT_BRACE  &kp DOUBLE_QUOTES  &kp PAUSE_BREAK  &kp COLON      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp TILDE
-&kp HOME    &kp LS(S)  &kp E      &kp RPAR        &kp U              &kp SCROLLLOCK   &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp Q              &kp TAB          &kp DOT        &kp N7        &kp N8        &kp N9        &kp INS
-&kp LSHIFT  &none      &kp SPACE  &kp LALT        &kp PSCRN          &kp RSHIFT       &kp BACKSPACE  &kp ENTER     &kp RCTRL
+&kp FSLH    &kp COMMA  &kp END    &kp LEFT_BRACE  &kp DOUBLE_QUOTES  &none           &new_macrocolonn  &new_macro1  &new_macro2  &new_macro3  &new_macronami
+&kp HOME    &kp LS(S)  &kp E      &kp RPAR        &kp U              &kp SCROLLLOCK  &new_macroslasy   &new_macro4  &new_macro5  &new_macro6  &new_macro0
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp Q              &kp TAB         &kp DOT           &new_macro7  &new_macro8  &new_macro9  &kp INS
+&kp LSHIFT  &none      &kp SPACE  &kp LALT        &kp PSCRN          &kp RSHIFT      &kp BACKSPACE     &kp ENTER    &kp RCTRL
             >;
         };
 
