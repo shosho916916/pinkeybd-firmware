@@ -184,10 +184,10 @@
 
         Lower2_layer {
             bindings = <
-&none       &kp COMMA  &kp END    &kp LEFT_BRACE   &kp SINGLE_QUOTE  &kp ESC     &kp L      &kp R      &kp PG_UP   &kp LBKT   &kp RBRC
-&kp HOME    &kp LS(S)  &kp END    &kp RIGHT_BRACE  &kp U             &kp LCTRL   &kp BSPC   &kp HOME   &kp PG_DN   &kp END    &kp DEL
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)        &kp Q             &kp TAB     &kp APOS   &kp EQUAL  &kp BSLH    &kp GRAVE  &kp INS
-&kp LSHIFT  &mo 5      &kp SPACE  &kp LALT         &kp PSCRN         &kp RSHIFT  &kp ENTER  &none      &kp RSHIFT
+&kp HASH    &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
+&kp DOLLAR  &kp APOSTROPHE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&none       &kp AT             &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_CONTROL  &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
+&kp ESCAPE  &kp LEFT_SHIFT     &kp SPACE         &kp LEFT_GUI       &kp PSCRN         &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
             >;
         };
 
@@ -200,10 +200,10 @@
 
         Num_layer {
             bindings = <
-&kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp ESC     &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none       &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)
-&kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp TAB     &kp APOS    &kp EQUAL   &kp BSLH    &kp GRAVE   &kp INS
-&mo LSHIFT  &mo 5       &kp SPACE   &kp LSHIFT  &kp F11     &kp RSHIFT  &kp ENTER   &none       &kp RSHIFT
+&kp N1      &kp N2          &kp N3      &kp N4        &kp N5      &kp ESC     &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
+&kp LS(N1)  &kp LS(N2)      &kp LS(N3)  &kp LS(N4)    &kp LS(N5)  &none       &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)
+&kp F1      &kp F2          &kp F3      &kp F4        &kp F5      &kp TAB     &kp APOS    &kp EQUAL   &kp BSLH    &kp GRAVE   &kp INS
+&mo LSHIFT  &kp LEFT_SHIFT  &kp SPACE   &kp LEFT_GUI  &kp F11     &kp RSHIFT  &kp ENTER   &none       &kp DELETE
             >;
         };
 
