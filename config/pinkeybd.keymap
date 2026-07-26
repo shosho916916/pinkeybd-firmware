@@ -21,7 +21,7 @@
 
         lag1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
             timeout-ms = <0>;
         };
 
