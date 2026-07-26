@@ -122,6 +122,20 @@
             bindings = <&kp LANGUAGE_2 &kp TILDE>;
             label = "NEW_MACRONAMI";
         };
+
+        new_macrominus: new_macrominus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp KP_MINUS>;
+            label = "NEW_MACROMINUS";
+        };
+
+        new_macrounder: new_macrounder {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp UNDER>;
+            label = "NEW_MACROUNDER";
+        };
     };
 
     keymap {
@@ -154,10 +168,10 @@
 
         Lower_layer {
             bindings = <
-&kp FSLH    &kp COMMA  &kp END    &kp LEFT_BRACE  &kp DOUBLE_QUOTES  &none           &new_macrocolonn  &new_macro1  &new_macro2  &new_macro3  &new_macronami
-&kp HOME    &kp LS(S)  &kp E      &kp RPAR        &kp U              &kp SCROLLLOCK  &new_macroslasy   &new_macro4  &new_macro5  &new_macro6  &new_macro0
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp Q              &kp TAB         &kp DOT           &new_macro7  &new_macro8  &new_macro9  &kp INS
-&kp LSHIFT  &none      &kp SPACE  &kp LALT        &kp PSCRN          &kp RSHIFT      &kp BACKSPACE     &kp ENTER    &kp RCTRL
+&none       &none           &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT      &kp TAB       &new_macrocolonn  &new_macro1  &new_macro2  &new_macro3  &new_macronami
+&none       &kp KP_EQUAL    &kp KP_PLUS    &kp KP_MINUS      &kp ASTERISK     &none         &new_macroslasy   &new_macro4  &new_macro5  &new_macro6  &new_macro0
+&none       &none           &none          &none             &new_macrounder  &kp LEFT_ALT  &kp DOT           &new_macro7  &new_macro8  &new_macro9  &new_macrominus
+&kp ESCAPE  &kp LEFT_SHIFT  &none          &lt 7 LEFT_GUI    &kp PSCRN        &mkp MB1      &kp BACKSPACE     &kp ENTER    &kp DEL
             >;
         };
 
@@ -236,10 +250,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans          &trans  &trans  &trans            &trans    &trans         &trans     &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans            &trans    &trans         &mkp MB2   &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &kp LEFT_CONTROL  &trans    &trans         &trans     &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &trans  &to 0   &kp PRINTSCREEN   &mkp MB1  &kp BACKSPACE  &kp ENTER  &trans
+&none       &none           &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none            &kp TAB   &kp RG(LEFT_ARROW)  &kp RG(RIGHT_ARROW)  &none  &none  &none
+&none       &kp LC(X)       &kp LC(V)           &kp LC(C)            &none            &none     &none               &mkp MB2             &none  &none  &none
+&none       &none           &kp LEFT_SHIFT      &kp LEFT_CONTROL     &none            &none     &none               &none                &none  &none  &none
+&kp ESCAPE  &kp LEFT_SHIFT  &kp SPACE           &none                &kp PRINTSCREEN  &mkp MB1  &kp BACKSPACE       &kp ENTER            &none
             >;
         };
     };
