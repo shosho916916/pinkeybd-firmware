@@ -152,7 +152,7 @@
         // |    L_SHIFT     |               |               |       none    |    SPACE      |    LALT       |                  |   RSHIFT   |   ENTER       |       FUN_L  |               |               |    RCTRL    |
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        Lower_layer {
+        layer_1 {
             bindings = <
 &none       &none           &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT   &kp TAB       &new_macrocolonn  &new_macro1  &new_macro2  &new_macro3  &new_macronami
 &none       &kp KP_EQUAL    &kp KP_PLUS    &kp KP_MINUS      &kp ASTERISK  &none         &new_macroslasy   &new_macro4  &new_macro5  &new_macro6  &new_macro10
@@ -170,7 +170,7 @@
         // |    L_SHIFT     |                |               |       BT_L    |      SPACE   |    LALT       |                  |   ENTER    |    none     |   R_SHIFT      |               |             |   R_SHIFT   |
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        Lower2_layer {
+        layer_2 {
             bindings = <
 &kp HASH    &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
 &kp DOLLAR  &kp APOSTROPHE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
