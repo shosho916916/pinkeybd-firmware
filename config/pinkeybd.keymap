@@ -5,7 +5,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&lt { tapping-term-ms = <140>; };
+&lt { tapping-term-ms = <200>; };
 
 / {
     behaviors {
