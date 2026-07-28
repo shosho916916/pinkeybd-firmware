@@ -80,11 +80,11 @@
             label = "NEW_MACRO7";
         };
 
-        new_macro8: new_macro {
+        new_macro8: new_macro8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp N8>;
-            label = "NEW_MACRO";
+            label = "NEW_MACRO8";
         };
 
         new_macro9: new_macro9 {
@@ -182,7 +182,7 @@
         layer_1 {
             bindings = <
 &none       &none           &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT               &kp TAB       &new_macrojikan  &new_macro1  &new_macro2  &new_macro3  &new_macronami
-&none       &kp KP_EQUAL    &kp KP_PLUS    &kp KP_MINUS      &new_macro_marukakkomigi  &none         &new_macroslasy  &new_macro4  &new_macro5  &new_macro6  &new_macro10
+&none       &kp UNDER       &kp KP_PLUS    &kp KP_MINUS      &new_macro_marukakkomigi  &none         &new_macroslasy  &new_macro4  &new_macro5  &new_macro6  &new_macro10
 &none       &none           &none          &none             &kp UNDER                 &kp LEFT_ALT  &kp DOT          &new_macro7  &new_macro8  &new_macro9  &kp KP_SUBTRACT
 &kp ESCAPE  &kp LEFT_SHIFT  &none          &lt 7 LEFT_GUI    &kp PSCRN                 &mkp MB1      &kp BACKSPACE    &kp ENTER    &kp DEL
             >;
@@ -199,10 +199,10 @@
 
         layer_2 {
             bindings = <
-&kp HASH     &kp DOUBLE_QUOTES  &kp LEFT_BRACKET          &kp RIGHT_BRACKET     &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
-&kp DOLLAR   &kp APOSTROPHE     &new_macro_marukakkomigi  &new_macro_marukakko  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&key_repeat  &kp AT             &kp LEFT_BRACE            &kp RIGHT_BRACE       &kp LEFT_CONTROL  &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
-&kp ESCAPE   &kp LEFT_SHIFT     &kp SPACE                 &kp LEFT_GUI          &kp PSCRN         &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
+&kp HASH    &kp AT            &kp RIGHT_BRACKET         &kp RIGHT_BRACKET     &kp AMPERSAND     &kp ESC   &none          &kp HOME        &kp UP_ARROW    &kp END          &none
+&kp DOLLAR  &kp AMPERSAND     &new_macro_marukakkomigi  &new_macro_marukakko  &kp BACKSLASH     &none     &none          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&none       &kp LEFT_BRACKET  &kp RIGHT_BRACE           &kp RIGHT_BRACE       &kp LEFT_CONTROL  &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
+&kp ESCAPE  &kp LEFT_SHIFT    &kp SPACE                 &kp LEFT_GUI          &kp PSCRN         &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
             >;
         };
 
