@@ -14,6 +14,14 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+　　　　 encoder_msc_down_up: encoder_msc_down_up {
+　           compatible = "zmk,behavior-sensor-rotate";
+　           label = "ENCODER_MSC_DOWN_UP";
+             #sensor-binding-cells = <0>;
+             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+             tap-ms = <20>;
+      };
+
     };
 
     combos {
@@ -169,7 +177,8 @@
 &kp ESC  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 7 LEFT_GUI  &kp F             &mkp MB1      &kp BACKSPACE  &lt 2 ENTER  &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
+
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -187,7 +196,8 @@
 &kp ESCAPE  &kp LEFT_SHIFT  &none          &lt 7 LEFT_GUI    &kp PSCRN                &mkp MB1      &kp BACKSPACE    &kp ENTER    &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
+
         };
 
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -204,6 +214,10 @@
 &none       &kp LEFT_BRACKET  &kp RIGHT_BRACE           &kp LS(BSLH)          &none          &kp TAB   &none          &kp EXCL        &kp QUESTION    &none            &none
 &kp ESCAPE  &kp LEFT_SHIFT    &kp SPACE                 &kp LEFT_GUI          &kp PSCRN      &mkp MB1  &kp BACKSPACE  &kp ENTER       &kp DELETE
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+
+
         };
 
         // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -271,7 +285,8 @@
 &kp ESCAPE  &kp LEFT_SHIFT  &kp SPACE           &none                &kp PRINTSCREEN  &mkp MB1  &kp BACKSPACE       &kp ENTER            &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&encoder_msc_down_up>;
+
         };
     };
 };
