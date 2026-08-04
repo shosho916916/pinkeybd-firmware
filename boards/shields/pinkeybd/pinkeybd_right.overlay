@@ -66,7 +66,7 @@
         layers = <6>; // ※スクロール用に使いたいレイヤー番号に合わせて変更してください
         input-processors = < 
             &zip_xy_to_scroll_mapper 
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 10 
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 20 
         >;
     };
 };
