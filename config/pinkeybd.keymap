@@ -296,7 +296,7 @@
 };
 &trackball_listener { 
     scroller { 
-        layers = <1>; // ※スクロール用に使いたいレイヤー番号に合わせて変更してください 
+        layers = <6>; // ※スクロール用に使いたいレイヤー番号に合わせて変更してください 
         input-processors = <&zip_xy_to_scroll_mapper>; 
      }; 
 };
