@@ -3,6 +3,7 @@
 #include <physical_layouts.dtsi>
 #include <dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 // The matrix transform for this board is 6 columns over because the left half is 5 columns wide according to the matrix.
 &default_transform {
@@ -63,6 +64,9 @@
 &trackball_listener {
     scroller {
         layers = <6>; // ※スクロール用に使いたいレイヤー番号に合わせて変更してください
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = < 
+            &zip_xy_to_scroll_mapper 
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT &zip_scroll_scaler 1 10 
+        >;
     };
 };
