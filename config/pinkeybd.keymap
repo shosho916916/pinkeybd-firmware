@@ -175,7 +175,7 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp L           &kp U        &kp COMMA       &kp DOT           &kp TAB       &kp F          &lt 6 W      &lt 6 R     &kp Y  &kp P
+&kp Q    &kp L           &kp U        &kp COMMA       &kp DOT           &kp TAB       &lt 6 F        &lt 6 W      &lt 6 R     &kp Y  &kp P
 &kp E    &kp I           &kp A        &kp O           &kp MINUS         &none         &kp K          &kp T        &kp N       &kp S  &kp H
 &kp Z    &kp X           &kp C        &kp V           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp G          &kp D        &kp M       &kp J  &kp B
 &kp ESC  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 7 LEFT_GUI  &kp PRINTSCREEN   &mkp MB1      &kp BACKSPACE  &lt 2 ENTER  &kp DELETE
@@ -270,10 +270,10 @@
 
         layer_6 {
             bindings = <
-&none  &none   &none   &none   &none             &none   &none   &none   &none  &none  &none
-&none  &none   &none   &none   &none             &none   &none   &none   &none  &none  &none
-&none  &none   &none   &none   &kp LEFT_CONTROL  &none   &none   &none   &none  &none  &none
-&none  &trans  &trans  &trans  &kp PRINTSCREEN   &trans  &trans  &trans  &none
+&none  &none   &none   &none   &none             &none              &none   &none   &none  &none  &none
+&none  &none   &none   &none   &none             &none              &none   &none   &none  &none  &none
+&none  &none   &none   &none   &kp LEFT_CONTROL  &none              &none   &none   &none  &none  &none
+&none  &trans  &trans  &trans  &kp PRINTSCREEN   &kp RIGHT_CONTROL  &trans  &trans  &none
             >;
         };
 
