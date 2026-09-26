@@ -5,7 +5,7 @@ manifest:
     - name: pinkeybd-firmware
       url-base: https://github.com/ktkhshi/pinkeybd-firmware
     - name: kot149
-    url-base: https://github.com/kot149
+      url-base: https://github.com/kot149
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
     - name: ktkhshi
