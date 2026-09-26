@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: pinkeybd-firmware
       url-base: https://github.com/ktkhshi/pinkeybd-firmware
+    - name: kot149
+    url-base: https://github.com/kot149
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
     - name: ktkhshi
@@ -13,6 +15,9 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
     - name: zephyr
       remote: zmkfirmware
       revision: v3.5.0+zmk-fixes
